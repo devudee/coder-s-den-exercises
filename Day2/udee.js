@@ -10,7 +10,23 @@
 // Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
 
 // Check if 'on' is found in both python and jargon
-
+let itCompanies = [
+  "Facebook",
+  " Google",
+  " Microsoft",
+  " Apple",
+  " IBM",
+  " Oracle",
+  " Amazon",
+];
+console.log(itCompanies);
+let companies = prompt("enter name of company");
+let check = itCompanies.includes(companies);
+if (check === true) {
+  console.log(companies);
+} else {
+  console.log("not available");
+}
 // I hope this course is not full of jargon. Check if jargon is in the sentence.
 
 // Generate a random number between 0 and 100 inclusively.

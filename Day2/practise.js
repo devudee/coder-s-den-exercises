@@ -66,7 +66,7 @@ let string3 = "30 days Of JavaScript";
 console.log(string3.includes("days"));
 console.log(string3.includes("of"));
 console.log(string3.includes("Script"));
-let string4 = "30";
+let string4 = "30  ";
 console.log(string4.concat("days ", "of ", "javascript "));
 let country1 = "fin";
 console.log(
