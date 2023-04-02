@@ -16,6 +16,7 @@
 body {
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
   background-color: var(--VeryDarkBlue);
   display: flex;
   flex-direction: column;
@@ -27,8 +28,102 @@ section {
   max-width: 400px;
   max-height: 400px;
   background: var(--DarkBlue);
+  display: flex;
+  flex-direction: column;
+  padding-block: 3rem;
+  gap: 2em;
+  border-radius: 19px;
+}
+/* .rating {
+  display: none;
+} */
+.box {
+  background: linear-gradient(30deg, var(--VeryDarkBlue), var(--DarkBlue));
+  padding: 1.5rem;
 }
 
+.star {
+  background-color: var(--DarkBlue);
+  width: max-content;
+  border-radius: 50%;
+  padding: 0.8rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.text h1 {
+  font-size: 25px;
+  color: var(--White);
+  margin-bottom: 0.5em;
+}
+.text p {
+  font-size: 15px;
+  line-height: 1.3rem;
+  margin-top: 1px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.button :hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.button p {
+  background-color: var(--DarkBlue);
+  padding-block: 0.7rem;
+  padding-inline: 1.1rem;
+  border-radius: 50%;
+  color: var(--LightGrey);
+}
+p {
+  color: var(--MediumGrey);
+  font-size: 0.9em;
+}
+.submit {
+  padding: 12px;
+  border-radius: 25px;
+  background-color: var(--Orange);
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  font-weight: 700;
+}
+/* first box styling ends here */
+
+/* second box major styling starts here */
 .result {
   display: none;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ratingnum {
+  background-color: var(--DarkBlue);
+  padding-block: 0.4em;
+  padding-inline: 0.8em;
+  border-radius: 19px;
+}
+.ratingnum p {
+  color: var(--Orange);
+  font-size: 0.9rem;
+}
+p span {
+  color: var(--Orange);
+}
+.text2 {
+  text-align: center;
 }

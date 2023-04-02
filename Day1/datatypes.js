@@ -40,3 +40,12 @@ let first_Name = "uduak",
 let myAge = 25;
 let yourAge = 30;
 console.log(myAge, yourAge);
+
+let myarray = ["a", "b", "c"];
+// myarray.forEach(element => {
+//  console.log(`index:`);
+// });
+
+myarray.forEach(function (elem, index) {
+  console.log(`index:${index}, value:${elem}`);
+});
